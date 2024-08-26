@@ -70,7 +70,7 @@ window.isOffline(() => console.log('Offline!'), true, () => console.log('Loaded 
 ```
 
 ## Demonstration
-You can see a live example of NS.JS in action on our demonstration project: [Am I Online?](https://am-i-online.vercel.app/)
+You can see a live example of NS.JS in action on our demonstration project: <a href="https://am-i-online.vercel.app/" target="_blank"> Am I Online? </a>
 
 ## Credits
 Developed by [Amine Amazou](https://github.com/amine-amazou).
