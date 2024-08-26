@@ -27,16 +27,16 @@ You can include NS.JS in your project using a CDN.
 Add the following script tag to your HTML file:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/amine-amazou/ns-js@1.0.1/dist/NS.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/amine-amazou/ns-js@latest/dist/NS.min.js"></script>
 ```
 
 ## Usage
 
 _isOnline(callback, onload = false, onloadcallback = null)_
 
-Purpose: Registers a callback to be executed when the network state changes to online.
+**Purpose**: Registers a callback to be executed when the network state changes to online.
 
-Parameters:
+**Parameters**: <br>
 callback: Function to execute when the network becomes online. <br>
 onload: If true, executes onloadcallback immediately if the page is online on load. <br>
 onloadcallback: Function to execute if the page is online when it loads. <br>
@@ -49,7 +49,7 @@ _isOffline(callback, onload = false, onloadcallback = null)_
 
 **Purpose**: Registers a callback to be executed when the network state changes to offline.
 
-**Parameters**:
+**Parameters**: <br>
 callback: Function to execute when the network becomes offline. <br>
 onload: If true, executes onloadcallback immediately if the page is offline on load. <br>
 onloadcallback: Function to execute if the page is offline when it loads. <br>
