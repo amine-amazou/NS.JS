@@ -1,10 +1,8 @@
 /*!
-    NS.JS - 1.0.0
+    NS.JS - 1.0.1
     Author: Amine Amazou
     Description: NS.JS simplifies network state management with powerful tools for handling online and offline scenarios right in the browser. Keep your web apps responsive and reliable, no matter the connectivity.
     Error Scripts: Amine Amazou & ChatGPT (AI Assistant)
-    Documentation: 
-    Github Link: 
     Copyright © 2024 amazou
     Licensed under the MIT license.
     https://github.com/amine-amazou/NS.JS/blob/main/LICENSE
