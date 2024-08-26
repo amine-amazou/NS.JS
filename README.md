@@ -22,25 +22,12 @@ NS.JS provides an intuitive API to monitor and manage network connectivity. With
 - **Fast and Small**: Minimal footprint for quick load times and efficient performance.
 
 ## Installation
-You can include NS.JS in your project using a CDN or by installing it via npm.
+You can include NS.JS in your project using a CDN.
 
-**Using CDN**
 Add the following script tag to your HTML file:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/ns-js@latest/dist/ns-js.min.js"></script>
-```
-
-**Using npm**
-Install the library via npm:
-
-```bash
-npm install ns-js
-```
-Then include it in your project:
-
-```javascript
-import 'ns-js';
+<script src="https://cdn.jsdelivr.net/gh/amine-amazou/ns-js@1.0.1/dist/NS.min.js"></script>
 ```
 
 ## Usage
@@ -48,10 +35,11 @@ import 'ns-js';
 _isOnline(callback, onload = false, onloadcallback = null)_
 
 Purpose: Registers a callback to be executed when the network state changes to online.
+
 Parameters:
-callback: Function to execute when the network becomes online.
-onload: If true, executes onloadcallback immediately if the page is online on load.
-onloadcallback: Function to execute if the page is online when it loads.
+callback: Function to execute when the network becomes online. <br>
+onload: If true, executes onloadcallback immediately if the page is online on load. <br>
+onloadcallback: Function to execute if the page is online when it loads. <br>
 
 ```javascript
 isOnline(() => console.log('Online!'), true, () => console.log('Loaded and online!'));
@@ -62,9 +50,9 @@ _isOffline(callback, onload = false, onloadcallback = null)_
 **Purpose**: Registers a callback to be executed when the network state changes to offline.
 
 **Parameters**:
-callback: Function to execute when the network becomes offline.
-onload: If true, executes onloadcallback immediately if the page is offline on load.
-onloadcallback: Function to execute if the page is offline when it loads.
+callback: Function to execute when the network becomes offline. <br>
+onload: If true, executes onloadcallback immediately if the page is offline on load. <br>
+onloadcallback: Function to execute if the page is offline when it loads. <br>
 
 
 ```javascript
