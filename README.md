@@ -1,4 +1,4 @@
-NS.JS
+<h1> NS.JS </h1>
 
 NS.JS is a lightweight JavaScript library designed to simplify the management of network state changes in web applications. It offers straightforward methods to handle online and offline states, making it easier to create resilient applications that react gracefully to network changes.
 
@@ -7,8 +7,9 @@ NS.JS is a lightweight JavaScript library designed to simplify the management of
 NS.JS provides an intuitive API to monitor and manage network connectivity. With NS.JS, you can detect the network status when your webpage loads and respond to changes in network connectivity dynamically. This library ensures that your web application can adapt to changes in network conditions without unnecessary complexity.
 
 ## Table of Contents
-
+  
   - [Features](#features)
+  - [Browser Support](#browser_support)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Demonstration](#demonstration)
@@ -20,6 +21,21 @@ NS.JS provides an intuitive API to monitor and manage network connectivity. With
 - **Handling Network State Changes**: Automatically respond to changes in network connectivity with easy-to-use event listeners.
 - **Easy to Use**: Simple API that integrates seamlessly into your existing code.
 - **Fast and Small**: Minimal footprint for quick load times and efficient performance.
+
+## Browser Support
+
+NS.JS utilizes the online and offline events provided by modern browsers. Here’s a list of browsers that support these events:
+
+- **Google Chrome** (version 4+)
+- **Mozilla Firefox** (version 6+)
+- **Safari** (version 5.1+)
+- **Microsoft Edge** (version 12+)
+- **Opera** (version 12.1+)
+- **Internet Explorer** (version 9+)
+- **Mobile Browsers**: Most modern mobile browsers also support these events.
+
+**Note**: If a browser does not support the online and offline events, the library functions will still return the network state (true for online, false for offline).
+This ensures that your application can still check the network status even in environments with limited support.
 
 ## Installation
 You can include NS.JS in your project using a CDN.
@@ -37,9 +53,9 @@ _isOnline(callback, onload = false, onloadcallback = null)_
 **Purpose**: Registers a callback to be executed when the network state changes to online.
 
 **Parameters**: <br>
-callback: Function to execute when the network becomes online. <br>
-onload: If true, executes onloadcallback immediately if the page is online on load. <br>
-onloadcallback: Function to execute if the page is online when it loads. <br>
+_callback_: Function to execute when the network becomes online. <br>
+_onload_: If true, executes onloadcallback immediately if the page is online on load. <br>
+_onloadcallback_: Function to execute if the page is online when it loads. <br>
 
 ```javascript
 isOnline(() => console.log('Online!'), true, () => console.log('Loaded and online!'));
@@ -50,9 +66,9 @@ _isOffline(callback, onload = false, onloadcallback = null)_
 **Purpose**: Registers a callback to be executed when the network state changes to offline.
 
 **Parameters**: <br>
-callback: Function to execute when the network becomes offline. <br>
-onload: If true, executes onloadcallback immediately if the page is offline on load. <br>
-onloadcallback: Function to execute if the page is offline when it loads. <br>
+_callback_: Function to execute when the network becomes offline. <br>
+_onload_: If true, executes onloadcallback immediately if the page is offline on load. <br>
+_onloadcallback_: Function to execute if the page is offline when it loads (Only applicable to pages that support offline functionality). <br>
 
 
 ```javascript
